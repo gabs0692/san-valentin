@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>San Valentín 💕</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
+<div class="container">
+
+  <!-- Pantalla 1 -->
+  <section class="screen active">
+    <img src="dudu1.png" class="sticker">
+    <h1>Hola bb 💕</h1>
+    <p>Tengo algo pequeño pero importante que preguntarte…</p>
+    <button onclick="nextScreen()">Continuar</button>
+  </section>
+
+  <!-- Pantalla 2 -->
+  <section class="screen">
+    <img src="dudu2.png" class="sticker">
+    <p>
+      Desde que estás conmigo,<br>
+      mis días son más lindos ✨<br><br>
+      Y por eso hoy quiero preguntarte algo…
+    </p>
+    <button onclick="nextScreen()">Ver pregunta</button>
+  </section>
+
+  <!-- Pantalla 3 -->
+  <section class="screen">
+    <img src="dudu3.png" class="sticker">
+    <h2>¿Quieres ser mi San Valentín? 🥰</h2>
+    <div class="buttons">
+      <button class="yes" onclick="nextScreen(true)">Sí 💖</button>
+      <button class="no" onclick="changeNoText()">No</button>
+    </div>
+  </section>
+
+  <!-- Pantalla Final -->
+  <section class="screen">
+    <img src="dudu4.png" class="sticker">
+    <h1>Sabía que dirías que sí 💖</h1>
+    <p>Feliz San Valentín, amor 🌷<br>Gracias por hacerme tan feliz.</p>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
